@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+    {% block content %}
+        <p>{{ question }}</p>
+        <form action="/answer" method="POST">
+            <label for="true">True:</label>
+            <input type="radio" id="true" name="answer" value="true"><br>
+            <label for="false">False:</label>
+            <input type="radio" id="false" name="answer" value="false"><br>
+            <input type="submit" value="submit">
+        </form>
+    {% endblock %}

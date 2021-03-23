@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+    {% block content %}
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <p>You have already completed the survey</p>
+        {% endif %}
+    {% endwith %}
+        <h2>Thank You for completing the {{ title }}</h2>
+    {% endblock %}
